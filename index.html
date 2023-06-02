@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    a {
+      color: currentColor rgb(221, 184, 17);
+    }
+
+    body {
+      margin: 0%;
+      padding: 0%;
+      height: 100%;
+      width: 100%;
+    }
+
+    .container {
+      height: 100vh;
+      width: 100%;
+      background-image: url(download1.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: 7s;
+
+      animation-name: animate ;
+      animation-direction:alternate ;
+      animation-duration: 30s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      animation-play-state:running ;
+      animation-timing-function:ease-in-out ;
+    }
+    @keyframes animate{
+      0%{
+        background-image: url(download1.jpg);
+      }20%{
+        background-image: url(download2.jpg);
+      }40%{
+        background-image: url(download3.jpg);
+      }60%{
+        background-image: url(download4.jpg);
+      }80%{
+        background-image: url(download5.jpg);
+      }100%{
+        background-image: url(download1.jpg);
+      }
+    }
+ </style>
+  <title>MineFarms </title>
+</head>
+
+<body>
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img src="favicon.ico" alt="Icon">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+      <b> <span class="ml-3 text-xl" style="color: coral;">MineFarms</span> </b> 
+      </a>
+      <nav
+        class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+      <b>  <a href="about.html" class="mr-5 hover:text-indigo-900" style="color: darkorange;" >About</a>
+        <a href="sign.html" class="mr-5 hover:text-indigo-900" style="color: darkorange;">Sign In</a>
+        <a href="overworld.html" class="mr-5 hover:text-indigo-900" style="color: darkorange;">Overworld</a>
+        <a href="nether.html" class="mr-5 hover:text-indigo-900" style="color: darkorange;">Nether</a>
+        <a href="end.html" class="mr-5 hover:text-indigo-900" style="color: darkorange;">End</a>
+        <a href="premium.html" class="mr-5 hover:text-indigo-900" style="color: darkorange;">Buy Premium Here!</a>
+      </b>
+    </nav>
+      <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+        <b><a href="email.html">Send me E-mail For any Queries</a> </b>
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+</body>
+</html>
